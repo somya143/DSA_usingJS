@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //linear time complexity
+        function factorial(n){
+        let pro = 1;
+        for(let i=1; i<=n; i++){
+          pro = pro*i;
+        }
+        console.log(pro)
+        }
+        factorial(4)
+        //recursively
+        function facrorialByRecursive(n){
+            if(n==0 || n==1){
+                return 1;
+            }
+           return n * facrorialByRecursive(n-1)
+        }
+       let x = facrorialByRecursive(5)
+       console.log(x)
+    </script>
+</body>
+</html>
